@@ -1,13 +1,13 @@
 function updateTime() {
-  // Amsterdam //
-  let amsterdamElement = document.querySelector("#amsterdam");
-  if (amsterdamElement) {
-    let amsterdamDateElement = amsterdamElement.querySelector(".date");
-    let amsterdamTimeElement = amsterdamElement.querySelector(".time");
-    let amsterdamTime = moment().tz("Europe/Amsterdam");
+  // Maldives //
+  let maldivesElement = document.querySelector("#maldives");
+  if (maldivesElement) {
+    let maldivesDateElement = maldivesElement.querySelector(".date");
+    let maldivesTimeElement = maldivesElement.querySelector(".time");
+    let maldivesTime = moment().tz("Indian/Maldives");
 
-    amsterdamDateElement.innerHTML = amsterdamTime.format("MMMM	Do YYYY");
-    amsterdamTimeElement.innerHTML = amsterdamTime.format(
+    maldivesDateElement.innerHTML = maldivesTime.format("MMMM	Do YYYY");
+    maldivesTimeElement.innerHTML = maldivesTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
@@ -21,6 +21,19 @@ function updateTime() {
 
     dubaiDateElement.innerHTML = dubaiTime.format("MMMM	Do YYYY");
     dubaiTimeElement.innerHTML = dubaiTime.format(
+      "h:mm:ss [<small>]A[</small>]"
+    );
+  }
+
+  // Johannesburg //
+  let johannesburgElement = document.querySelector("#johannesburg");
+  if (johannesburgElement) {
+    let johannesburgDateElement = johannesburgElement.querySelector(".date");
+    let johannesburgTimeElement = johannesburgElement.querySelector(".time");
+    let johannesburgTime = moment().tz("Africa/Johannesburg");
+
+    johannesburgDateElement.innerHTML = johannesburgTime.format("MMMM	Do YYYY");
+    johannesburgTimeElement.innerHTML = johannesburgTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }

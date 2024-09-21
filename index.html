@@ -7,35 +7,54 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
     <title>World Clock - Modiehi Shapu</title>
   </head>
   <body>
     <div class="container">
-      <h1>World Clock</h1>
+      <h1>World Clock🕜</h1>
 
       <select id="city">
         <option value="">Select a city..</option>
         <option value="current">My current location</option>
-        <option value="Europe/Amsterdam">Amsterdam</option>
+        <option value="Indian/Maldives">Maldives</option>
         <option value="Asia/Dubai">Dubai</option>
         <option value="Africa/Johannesburg">Johannesburg</option>
       </select>
 
       <div id="cities">
-        <div class="city" id="amsterdam">
+        <div class="city" id="maldives">
           <div>
-            <h2>Amsterdam</h2>
+            <h2 class="heading">Maldives</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
         </div>
         <div class="city" id="dubai">
           <div>
-            <h2>Dubai</h2>
+            <h2 class="heading">Dubai</h2>
             <div class="date"></div>
           </div>
           <div class="time"></div>
         </div>
+      </div>
+      <div class="city" id="johannesburg">
+        <div>
+          <h2 class="heading">Johannesburg</h2>
+          <div class="date"></div>
+        </div>
+        <div class="time"></div>
       </div>
     </div>
 

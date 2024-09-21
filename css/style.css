@@ -1,6 +1,10 @@
 body {
   background-color: #f9f7fe;
-  font-family: sans-serif;
+  font-family: "Roboto", sans-serif;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/000/570/755/non_2x/vector-political-paper-map-of-the-world-on-a-gray-background-paper-art-world-map.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 h1 {
@@ -22,13 +26,25 @@ select {
   padding: 10px;
 }
 
+select:hover,
+select:active {
+  cursor: pointer;
+  background-color: orangered;
+  color: white;
+}
+
 .container {
   max-width: 600px;
   margin: 60px auto;
-  background: white;
+  background: rgb(194, 176, 176, 0.5);
   padding: 30px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
+}
+
+.heading,
+a {
+  color: orangered;
 }
 
 .city {
