@@ -16,18 +16,18 @@ h2 {
 
 select {
   display: block;
-  width: 100px;
+  width: 100%;
+  font-size: 18px;
   border-radius: 4px;
   padding: 10px;
-  font-size: 18px;
 }
 
 .container {
   max-width: 600px;
-  margin: 60px 0;
+  margin: 60px auto;
   background: white;
   padding: 30px;
-  box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 10px;
 }
 
@@ -35,8 +35,8 @@ select {
   display: flex;
   margin: 10px 0;
   justify-content: space-between;
-  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
   padding: 30px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
 .city:last-child {
@@ -55,7 +55,7 @@ select {
 .time small {
   font-size: 24px;
   vertical-align: middle;
-  line-height: 36px;
+  line-height: 48px;
 }
 
 footer {
